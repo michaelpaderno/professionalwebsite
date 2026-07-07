@@ -236,6 +236,43 @@
     section.experience, section.education, section.writing, section.now { padding-bottom: 68px; }
     ul.roles li { grid-template-columns: 1fr; gap: 6px; }
   }
+
+  .stay-in-touch-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+.stay-in-touch-form input {
+  border: none;
+  border-bottom: 1px solid var(--hairline);
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--ink);
+  padding: 2px 0;
+  width: 140px;
+}
+.stay-in-touch-form input::placeholder {
+  color: var(--muted);
+}
+.stay-in-touch-form input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent);
+}
+.stay-in-touch-form button {
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+.stay-in-touch-form button:hover {
+  color: var(--accent);
+}
+
 </style>
 </head>
 <body>
@@ -350,14 +387,18 @@
     <p>Moving to Philadelphia this month to start at Wharton in August. Spending the summer writing and talking to people who work on the business side of entertainment. If that's you, say hello.</p>
   </section>
 
-  <footer class="site" id="contact">
-    <span class="label" style="color: var(--ink);">Contact</span>
-    <div class="contact-row">
-      <a href="mailto:paderno@wharton.upenn.edu">Email</a>
-      <a href="https://www.linkedin.com/in/paderno" rel="me">LinkedIn</a>
-    </div>
-    <div class="colophon">© 2026 Michael Paderno</div>
-  </footer>
+<footer class="site" id="contact">
+  <span class="label" style="color: var(--ink);">Contact</span>
+  <div class="contact-row">
+    <a href="mailto:paderno@wharton.upenn.edu">Email</a>
+    <a href="https://www.linkedin.com/in/paderno" rel="me">LinkedIn</a>
+    <form action="https://buttondown.com/api/emails/embed-subscribe/paderno" method="post" class="stay-in-touch-form">
+      <input type="email" name="email" placeholder="Stay in touch" required>
+      <button type="submit">→</button>
+    </form>
+  </div>
+  <div class="colophon">© 2026 Michael Paderno</div>
+</footer>
 
 </div>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e7ca8c584e14412997a94fe05a3d024"}'></script><!-- End Cloudflare Web Analytics -->
