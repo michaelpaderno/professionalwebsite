@@ -237,7 +237,7 @@
     ul.roles li { grid-template-columns: 1fr; gap: 6px; }
   }
 
-  .stay-in-touch-form {
+ .stay-in-touch-form {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -248,26 +248,30 @@
   border-bottom: 1px solid var(--hairline);
   background: transparent;
   font-family: inherit;
-  font-size: inherit;
-  color: var(--ink);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
   padding: 2px 0;
-  width: 140px;
+  width: 150px;
 }
 .stay-in-touch-form input::placeholder {
   color: var(--muted);
+  font-family: inherit;
 }
 .stay-in-touch-form input:focus {
   outline: none;
   border-bottom: 1px solid var(--accent);
+  color: var(--ink);
 }
 .stay-in-touch-form button {
   border: none;
   background: transparent;
   color: var(--ink);
-  font-family: inherit;
-  font-size: inherit;
+  font-size: 1rem;
   cursor: pointer;
   padding: 0;
+  line-height: 1;
 }
 .stay-in-touch-form button:hover {
   color: var(--accent);
